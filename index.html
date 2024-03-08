@@ -21,12 +21,45 @@
     <div class="px-9 pt-6 md:px-28 md:pt-14">
       <!--Navbar-->
       <div class="flex items-center justify-between">
+        <div class="md:hidden flex items-center">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Homepage</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>About</a></li>
+            </ul>
+          </div>
+          <div class="md:hidden">
+            <h1 class="text-4xl font-bold">
+              Hockey<span class="text-red-500">'</span>s
+            </h1>
+          </div>
+        </div>
         <div>
-          <h1 class="text-4xl font-bold">
+          <h1 class="text-4xl font-bold hidden md:inline">
             Hockey<span class="text-red-500">'</span>s
           </h1>
         </div>
-        <div class="flex gap-8">
+        <div class="lg:flex gap-8 hidden">
           <h1 class="hover:text-red-500 cursor-pointer">Home</h1>
           <h1 class="hover:text-red-500 cursor-pointer">About</h1>
           <h1 class="hover:text-red-500 cursor-pointer">Pages</h1>
@@ -34,7 +67,7 @@
           <h1 class="hover:text-red-500 cursor-pointer">Contact</h1>
         </div>
         <div class="flex items-center">
-          <button class="btn btn-ghost btn-circle">
+          <button class="btn btn-ghost btn-circle hidden md:inline">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5"
